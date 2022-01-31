@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Heebo', sans-serif;
+}
+*:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2C302F;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.bg-video {
+    position: relative;
+}
+
+.bg-video video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header-text {
+    -webkit-animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* slider */
+
+.slider {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.swiper-slide .main-subtitle {
+  top: 100%;
+  font-size: 20px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  top: 300px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #C99B61;
+}
+
+/* slider */
+
+.header {
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    max-width: 900px;
+    width: 100%;
+}
+
+.header-marker {
+    max-width: 363px;
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dubrov {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    border-bottom: 2px solid #C99B61;
+}
+
+.dubrov-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dubrov-name {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.dubrov-img {
+    max-width: 320px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.dubrov-info {
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    font-size: 14px;
+    padding-top: 40px;
+}
+
+.main-subtitle {
+    position: absolute;
+    right: 40px;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    z-index: 100;
+}
+
+.main-subtitle span {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .dubrov-content {
+        padding-top: 100px;
+        flex-wrap: wrap;
+    }
+
+    .dubrov-img {
+        width: 100%;
+        max-width: unset;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .dubrov-info {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-subtitle {
+        font-size: 24px;
+    }
+
+    .main-subtitle span {
+        font-size: 14px;
+    }
+}
+
+.shaul {
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    border-bottom: 2px solid #C99B61;
+    border-top: 2px solid #C99B61;
+}
+
+.shaul-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shaul-text {
+    max-width: 450px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.shaul-info {
+    max-width: 320px;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    margin-left: 10%;
+}
+
+.shaul-face {
+    border-radius: 50%;
+    max-width: 300px;
+    margin-right: 30%;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .shaul-info {
+        margin-left: unset;
+    }
+}
+
+@media (max-width: 992px) {
+    .shaul-info {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .shaul-face {
+        margin-right: unset;
+    }
+
+    .shaul-content {
+        justify-content: center;
+        row-gap: 50px;
+    }
+}
+
+.map {
+    width: 100%;
+    padding: 120px 0;
+    position: relative;
+}
+
+.map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.map-link {
+    max-width: 700px;
+    width: 100%;
+}
+
+.map-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    max-width: 900px;
+    width: 100%;
+}
+
+.map-subtitle {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer-content {
+    border-top: 2px solid #C99B61;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+}
+
+.footer-link {
+    color: #C99B61;
+    font-size: 24px;
+}
+
+
+.cont {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  overflow: hidden;
+  cursor: pointer;
+}
+.slide__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center left;
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  z-index: 1;
+  transition: 950ms;
+  will-change: transform;
+}
+.slide__img {
+  position: relative;
+  height: 100%;
+}
+.slide__img-wrapper {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 125%;
+  height: 120%;
+  transform: translate3d(0, 0, 0);
+  transition: 950ms;
+  will-change: transform;
+}
+.slide__close {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 200ms, z-index 0ms 200ms;
+}
+.slide__close:after, .slide__close:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: 500ms 500ms;
+}
+@media screen and (max-width: 960px) {
+  .slide__close:after, .slide__close:before {
+    width: 75px;
+    height: 15px;
+  }
+}
+.slide__close:after {
+  transform-origin: center left;
+  transform: rotate(45deg) scale(0, 0);
+}
+.slide__close:before {
+  left: -33px;
+  transform-origin: center right;
+  transform: rotate(-45deg) scale(0, 0);
+  transition: 500ms 650ms;
+}
+@media screen and (max-width: 960px) {
+  .slide__close:before {
+    left: -21px;
+  }
+}
+.slide__bg-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 350ms;
+  z-index: 2;
+}
+.slide__text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 23%;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 800;
+  transform: translate3d(0, -50%, 0) rotate(0.01deg);
+  will-change: transform, opacity;
+  transition: 750ms;
+  opacity: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 960px) {
+  .slide__text {
+    font-size: 30px;
+  }
+}
+.slide__text--1 {
+  left: 8%;
+}
+
+.slide {
+  left: 100%;
+}
+
+.slide--1 {
+  z-index: 0;
+}
+.slide--1 .slide__img-wrapper {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/snow-forest.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.slide--2 {
+  z-index: 1;
+}
+.slide--2 .slide__img-wrapper {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/desert.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.slide--3 {
+  z-index: 2;
+}
+.slide--3 .slide__img-wrapper {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/lonely-tree.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.slide--4 {
+  z-index: 3;
+}
+.slide--4 .slide__img-wrapper {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/road.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+.slide--5 {
+  z-index: 4;
+}
+.slide--5 .slide__img-wrapper {
+  background: url("https://www.nps.gov/lacl/learn/nature/images/Mountains-page_-Image-w-cred-cap_-1200w_-Neacola-CRL00222_3.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.icon-link--twitter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  opacity: 0;
+  z-index: -1;
+}
+.icon-link--twitter img {
+  width: 100%;
+}
+
+.icon-show {
+  opacity: 1;
+  z-index: 5;
+}
+
+.active .slide--1 .slide__bg {
+  transform: scale(0, 1);
+  transition: 950ms;
+}
+.active .slide--1 .slide__img-wrapper {
+  transform: translate3d(-150px, 0, 0);
+  transition: 2000ms;
+}
+.active .slide--1 {
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 950ms 0ms;
+}
+.active .slide--1 .slide__bg {
+  transform: scale(0, 1);
+  transition: 1900ms 0ms;
+}
+.active .slide--1 .slide__img-wrapper {
+  transform: translate3d(-150px, 0, 0);
+  transition: 2000ms 0ms;
+}
+.active .slide--2 {
+  transform: translate3d(-80%, 0, 0);
+  transition: transform 950ms 1235ms;
+}
+.active .slide--2 .slide__bg {
+  transform: scale(0, 1);
+  transition: 1900ms 1235ms;
+}
+.active .slide--2 .slide__img-wrapper {
+  transform: translate3d(-150px, 0, 0);
+  transition: 2000ms 1235ms;
+}
+.active .slide--3 {
+  transform: translate3d(-60%, 0, 0);
+  transition: transform 950ms 2470ms;
+}
+.active .slide--3 .slide__bg {
+  transform: scale(0, 1);
+  transition: 1900ms 2470ms;
+}
+.active .slide--3 .slide__img-wrapper {
+  transform: translate3d(-150px, 0, 0);
+  transition: 2000ms 2470ms;
+}
+.active .slide--4 {
+  transform: translate3d(-40%, 0, 0);
+  transition: transform 950ms 3705ms;
+}
+.active .slide--4 .slide__bg {
+  transform: scale(0, 1);
+  transition: 1900ms 3705ms;
+}
+.active .slide--4 .slide__img-wrapper {
+  transform: translate3d(-150px, 0, 0);
+  transition: 2000ms 3705ms;
+}
+.active .slide--5 {
+  transform: translate3d(-20%, 0, 0);
+  transition: transform 950ms 4940ms;
+}
+.active .slide--5 .slide__bg {
+  transform: scale(0, 1);
+  transition: 1900ms 4940ms;
+}
+.active .slide--5 .slide__img-wrapper {
+  transform: translate3d(-150px, 0, 0);
+  transition: 2000ms 4940ms;
+}
+
+.show-close {
+  z-index: 4;
+  opacity: 1;
+}
+.show-close:after {
+  transform: rotate(45deg) scale(1, 1);
+}
+.show-close:before {
+  transform: rotate(-45deg) scale(1, 1);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open-Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====================== */
+.cont {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .slide__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center left;
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    z-index: 1;
+    transition: 950ms;
+    will-change: transform;
+  }
+  .slide__img {
+    position: relative;
+    height: 100%;
+  }
+  .slide__img-wrapper {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 125%;
+    height: 120%;
+    transform: translate3d(0, 0, 0);
+    transition: 950ms;
+    will-change: transform;
+  }
+  .slide__close {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 200ms, z-index 0ms 200ms;
+  }
+  .slide__close:after, .slide__close:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: 500ms 500ms;
+  }
+  @media screen and (max-width: 960px) {
+    .slide__close:after, .slide__close:before {
+      width: 75px;
+      height: 15px;
+    }
+  }
+  .slide__close:after {
+    transform-origin: center left;
+    transform: rotate(45deg) scale(0, 0);
+  }
+  .slide__close:before {
+    left: -33px;
+    transform-origin: center right;
+    transform: rotate(-45deg) scale(0, 0);
+    transition: 500ms 650ms;
+  }
+  @media screen and (max-width: 960px) {
+    .slide__close:before {
+      left: -21px;
+    }
+  }
+  .slide__bg-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 350ms;
+    z-index: 2;
+  }
+  .slide__text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 23%;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 800;
+    transform: translate3d(0, -50%, 0) rotate(0.01deg);
+    will-change: transform, opacity;
+    transition: 750ms;
+    opacity: 0;
+    z-index: 1;
+  }
+  @media screen and (max-width: 960px) {
+    .slide__text {
+      font-size: 30px;
+    }
+  }
+  .slide__text--1 {
+    left: 8%;
+  }
+  .slide {
+    left: 100%;
+  }
+  .slide--1 {
+    z-index: 0;
+  }
+  .slide--1 .slide__img-wrapper {
+    background: url('../images/1604201715413076 1.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .slide--2 {
+    z-index: 1;
+  }
+  .slide--2 .slide__img-wrapper {
+    background: url('../images/slide3.png') center center no-repeat;
+    background-size: cover;
+  }
+  .slide--3 {
+    z-index: 2;
+  }
+  .slide--3 .slide__img-wrapper {
+    background: url('../images/slide1.png') center center no-repeat;
+    background-size: cover;
+  }
+  .slide--4 {
+    z-index: 3;
+  }
+  .slide--4 .slide__img-wrapper {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/road.jpeg') center center no-repeat;
+    background-size: cover;
+  }
+  .slide--5 {
+    z-index: 4;
+  }
+  .slide--5 .slide__img-wrapper {
+    background: url('https://www.nps.gov/lacl/learn/nature/images/Mountains-page_-Image-w-cred-cap_-1200w_-Neacola-CRL00222_3.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .icon-link--twitter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    opacity: 0;
+    z-index: -1;
+  }
+  .icon-link--twitter img {
+    width: 100%;
+  }
+  .icon-show {
+    opacity: 1;
+    z-index: 5;
+  }
+  .active .slide--1 .slide__bg {
+    transform: scale(0, 1);
+    transition: 950ms;
+  }
+  .active .slide--1 .slide__img-wrapper {
+    transform: translate3d(-150px, 0, 0);
+    transition: 2000ms;
+  }
+  .active .slide--1 {
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 950ms 0ms;
+  }
+  .active .slide--1 .slide__bg {
+    transform: scale(0, 1);
+    transition: 1900ms 0ms;
+  }
+  .active .slide--1 .slide__img-wrapper {
+    transform: translate3d(-150px, 0, 0);
+    transition: 2000ms 0ms;
+  }
+  .active .slide--2 {
+    transform: translate3d(-80%, 0, 0);
+    transition: transform 950ms 1235ms;
+  }
+  .active .slide--2 .slide__bg {
+    transform: scale(0, 1);
+    transition: 1900ms 1235ms;
+  }
+  .active .slide--2 .slide__img-wrapper {
+    transform: translate3d(-150px, 0, 0);
+    transition: 2000ms 1235ms;
+  }
+  .active .slide--3 {
+    transform: translate3d(-60%, 0, 0);
+    transition: transform 950ms 2470ms;
+  }
+  .active .slide--3 .slide__bg {
+    transform: scale(0, 1);
+    transition: 1900ms 2470ms;
+  }
+  .active .slide--3 .slide__img-wrapper {
+    transform: translate3d(-150px, 0, 0);
+    transition: 2000ms 2470ms;
+  }
+  .active .slide--4 {
+    transform: translate3d(-40%, 0, 0);
+    transition: transform 950ms 3705ms;
+  }
+  .active .slide--4 .slide__bg {
+    transform: scale(0, 1);
+    transition: 1900ms 3705ms;
+  }
+  .active .slide--4 .slide__img-wrapper {
+    transform: translate3d(-150px, 0, 0);
+    transition: 2000ms 3705ms;
+  }
+  .active .slide--5 {
+    transform: translate3d(-20%, 0, 0);
+    transition: transform 950ms 4940ms;
+  }
+  .active .slide--5 .slide__bg {
+    transform: scale(0, 1);
+    transition: 1900ms 4940ms;
+  }
+  .active .slide--5 .slide__img-wrapper {
+    transform: translate3d(-150px, 0, 0);
+    transition: 2000ms 4940ms;
+  }
+  .show-close {
+    z-index: 4;
+    opacity: 1;
+  }
+  .show-close:after {
+    transform: rotate(45deg) scale(1, 1);
+  }
+  .show-close:before {
+    transform: rotate(-45deg) scale(1, 1);
+  }
+  html {
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  @keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  
